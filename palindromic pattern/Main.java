@@ -1,20 +1,22 @@
-public class main {
+public class Main {
     public static void main(String[] args) {
         int n = 5; // Example input
-
         for(int i = 1; i <= n; i++) {
-
             // spaces
             for(int j = 1; j <= n-i; j++) {
                 System.out.print(" ");
             }
-            // numbers -> print row no, row no time 
+            // 1st half of the numbers
+            for(int j = i; j >= 1; j--) {
+                System.out.print(j);
+            }
 
-            for(int j = 1; j <=i; j++) {
-                System.out.print(i + " ");
+            // 2nd half of the numbers
+            for(int j = 2; j <= i; j++) {
+                System.out.print(j);
             }
             System.out.println();
-            
         }
     }
+
 }
