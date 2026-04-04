@@ -2,24 +2,17 @@ class Main {
     public static void main(String[] args) {
         int n = 5; // Example input 
 
-        for (int i = 1; i <=n; i++) {
+       int number = 1; // Starting number
 
-            // spaces
-            for(int j = 1; j <= n-i; j++) {
-                System.out.print(" ");
-            }
-             // 1st half number 
+       // outer loop 
+       for (int i = 1; i <= n; i++) {
 
-            for(int j =i; j >= 1; j--) {
-                System.out.print(j);
-
-            }
-            // 2nd half number 
-
-            for (int j = 2; j <= i; j++) {
-                System.out.print(j);
-            }
-             System.out.println();
+        // inner loop
+        for (int j = 1; j <= i; j++) {
+            System.out.print(number + "");
+            number ++; // increment the number for the next print 
         }
+        System.out.println();
+       }
     }
 }
