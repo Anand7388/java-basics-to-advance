@@ -1,16 +1,15 @@
+import java.util.*;
 public class anand {
     public static void main(String[] args) {
-       int n = 4;
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int sum = calculateSum(a, b);
+        System.out.println(sum);
+    }
 
-       //outer loop
-       for(int i = n; i >= 1; i--) {
-        // inner loop
-        for(int j = 1; j <= i; j++) {
-            System.out.print("*");
-        }
-        System.out.println();
-        }
-
-        
+    public static int calculateSum(int a, int b) {
+        int sum = a + b;
+        return sum;
     }
 }
